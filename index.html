@@ -3,83 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My School Hub</title>
+  <title>Peninsula Grammar Hub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #002147;
+      color: white;
       padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
     }
+
+    header img {
+      height: 50px;
+    }
+
     h1 {
-      text-align: center;
+      margin: 0;
+      font-size: 1.8rem;
     }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
+
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      font-size: 1.3rem;
+      color: #002147;
+    }
+
+    .links {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background: #C8102E;
+      color: white;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+      gap: 8px;
+    }
+
+    .links a img {
+      height: 20px;
+      width: auto;
+    }
+
+    .links a:hover {
+      background: #a50d24;
+    }
+
+    .timetable {
+      background: white;
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       text-align: center;
     }
-    .card a {
-      display: block;
-      margin-top: 10px;
+
+    .timetable a {
       text-decoration: none;
-      color: #007bff;
+      background: #002147;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
       font-weight: bold;
-    }
-    .todo {
-      margin-top: 40px;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <h1>📚 My School Hub</h1>
 
+  <!-- HEADER -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Peninsula_Grammar_logo.png" alt="Peninsula Grammar Logo">
+    <h1>Peninsula Grammar School Hub</h1>
+  </header>
+
+  <!-- SUBJECT CARDS -->
   <div class="grid">
+
     <div class="card">
-      <h2>Science</h2>
-      <a href="https://style-platform-link.com" target="_blank">Open Style</a>
+      <h2>Maths</h2>
+      <div class="links">
+        <a href="https://www.cambridge.org/go/resources" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Cambridge Logo"> Cambridge
+        </a>
+        <a href="https://zenith.peninsulagrammar.vic.edu.au/homepage/29403" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Zenith Logo"> Zenith
+        </a>
+      </div>
     </div>
-    <div class="card">
-      <h2>General</h2>
-      <a href="https://zenith-platform-link.com" target="_blank">Open Zenith</a>
-    </div>
+
     <div class="card">
       <h2>Humanities</h2>
-      <a href="https://jacplus.com" target="_blank">Open Jacaranda Plus</a>
+      <div class="links">
+        <a href="https://www.jacaranda.com.au/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Jacaranda Logo"> Jacaranda
+        </a>
+        <a href="https://www.canva.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Canva Logo"> Canva
+        </a>
+      </div>
     </div>
+
     <div class="card">
       <h2>English</h2>
-      <a href="https://book-link.com" target="_blank">Open English Book</a>
+      <div class="links">
+        <a href="https://zenith.peninsulagrammar.vic.edu.au/homepage/29379" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Zenith Logo"> Zenith
+        </a>
+        <a href="https://robbie-arnott.freenovelread.com/472963-flames" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Flames Logo"> Flames (Novel)
+        </a>
+      </div>
     </div>
+
+    <div class="card">
+      <h2>Science</h2>
+      <div class="links">
+        <a href="https://stileapp.com/au/institutions/834/subjects/566925" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Stile Logo"> Stile
+        </a>
+        <a href="https://zenith.peninsulagrammar.vic.edu.au/homepage/29429" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Zenith Logo"> Zenith
+        </a>
+      </div>
+    </div>
+
     <div class="card">
       <h2>VCD</h2>
-      <a href="https://adobe.com" target="_blank">Open Adobe Suite</a>
+      <div class="links">
+        <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Illustrator Logo"> Illustrator
+        </a>
+        <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Photoshop Logo"> Photoshop
+        </a>
+      </div>
     </div>
+
     <div class="card">
-      <h2>Business Management</h2>
-      <a href="https://edrolo.com" target="_blank">Open Edrolo</a>
+      <h2>Business</h2>
+      <div class="links">
+        <a href="https://edrolo.com.au/courses/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cambridge_University_Press_logo.png" alt="Edrolo Logo"> Edrolo
+        </a>
+      </div>
     </div>
+
   </div>
 
-  <div class="todo">
-    <h2>✅ To-Do List</h2>
-    <ul>
-      <li><input type="checkbox"> Science homework</li>
-      <li><input type="checkbox"> Read English book</li>
-      <li><input type="checkbox"> Business management Edrolo</li>
-    </ul>
+  <!-- TIMETABLE -->
+  <div class="timetable">
+    <h2>📅 My Timetable</h2>
+    <p>Click below to view your schedule:</p>
+    <a href="https://calendar.google.com/calendar/u/0?cid=ZTg1MzNiY2U1ZTc4Njc1MTA3MWQzNzdhNGEzOThhMjJjMDQ1MGRlZTk5MjUzNzQ4ODNhODcwNzU4OTliMzUwZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Open Timetable</a>
   </div>
+
 </body>
 </html>
